@@ -1,0 +1,18 @@
+import Web3 from "web3";
+import { abi as CloneFactoryAbi } from "./abi/CloneFactory.json";
+import { abi as ImplementationAbi } from "./abi/Implementation.json";
+import { abi as LumerinAbi } from "./abi/Lumerin.json";
+import { abi as FaucetAbi } from "./abi/Faucet.json";
+import { ContractContext as CloneFactoryContext } from "./generated-types/CloneFactory";
+import { ContractContext as ImplementationContext } from "./generated-types/Implementation";
+import { ContractContext as LumerinContext } from "./generated-types/Lumerin";
+import { ContractContext as FaucetContext } from "./generated-types/Faucet";
+export declare const CloneFactory: (web3: Web3, address: string) => CloneFactoryContext;
+export declare const Implementation: (web3: Web3, address: string) => ImplementationContext;
+export declare const Lumerin: (web3: Web3, address: string) => LumerinContext;
+export declare const Faucet: (web3: Web3, address: string) => FaucetContext;
+export declare const EthersCloneFactory: (ethers: any, address: string) => CloneFactoryContext;
+export declare const EthersImplementation: (ethers: any, address: string) => ImplementationContext;
+export declare const EthersLumerin: (ethers: any, address: string) => LumerinContext;
+export declare const EthersFaucet: (ethers: any, address: string) => FaucetContext;
+export { CloneFactoryContext, ImplementationContext, LumerinContext, FaucetContext, LumerinAbi, FaucetAbi, ImplementationAbi, CloneFactoryAbi };
